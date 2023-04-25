@@ -32,6 +32,8 @@ function convertTemp(value, fromUnit, toUnit) {
   throw new Error('Invalid unit');
 }
 
+console.log(converter);
+
 converter.addEventListener('input', () => {
   const inputTemp = parseFloat(inputField.value);
   const fromUnit = fromUnitField.value;
