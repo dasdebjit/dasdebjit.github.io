@@ -13,3 +13,4 @@ git add --all
 :echo %commit-comments%
 git commit -m ""%commit-comments%""
 @echo Pushing to remote server
+git push
