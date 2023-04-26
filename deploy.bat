@@ -1,5 +1,5 @@
 @echo off
-set /p commit-comments = Commiting changes
+set /p commit-comments = "Commiting changes"
 
 ::if [%1] NEQ [] ( 
 ::   set /p commit-comments =  %1
@@ -11,6 +11,7 @@ set /p commit-comments = Commiting changes
 git add --all
 ::@echo Commit changes
 :echo %commit-comments%
-git commit -m ""%commit-comments%""
+git commit -m /"%commit-comments%/"
+
 @echo Pushing to remote server
 git push
