@@ -23,9 +23,16 @@
 			<option value="k">Kelvin</option>
 		</select>
 		<output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-</form>
+	</form>
 
-<script src="converter.js"></script>
+		<script src="converter.js"></script>
+			
+		<script>
+			if('serviceWorker' in navigator)
+			{
+				navigator.serviceWorker.register('/sw.js', {scope: '/'});
+			}
+		</script>
 	</body>
 
 </html>
