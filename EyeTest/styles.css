@@ -1,0 +1,30 @@
+.grid{
+    width: 306px;
+    height: 186px;
+    border: solid silver 1px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.block{
+
+    width: 100px;
+    height: 60px;
+    border: solid white 1px;
+}
+
+.sink{
+    background-color: white; 
+    border: solid silver 1px;
+}
+
+.mole {
+    background-image: url('images/mole2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.missed {
+    background-color: red;
+}
